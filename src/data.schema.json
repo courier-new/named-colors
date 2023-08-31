@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://github.com/courier-new/named-colors/raw/main/src/data.schema.json",
+  "title": "Named Colors",
+  "description": "A list of named colors according to the CSS Color Module Level 4 specification.",
+  "type": "object",
+  "properties": {
+    "colors": {
+      "type": "array",
+      "description": "A list of named colors.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "description": "The keyword name of the color."
+          },
+          "hex": {
+            "type": "string",
+            "description": "The hexadecimal value of the color."
+          },
+          "decimal": {
+            "type": "array",
+            "description": "The decimal value of the color.",
+            "items": {
+              "type": "number"
+            }
+          },
+          "hsl": {
+            "type": "array",
+            "description": "The HSL value of the color.",
+            "items": {
+              "type": "number"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "description": "Tags to describe the color.",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["keyword", "hex", "decimal", "hsl", "tags"]
+      }
+    }
+  },
+  "required": ["colors"]
+}
