@@ -1,0 +1,25 @@
+.code-label {
+  font-size: 0.625rem;
+  line-height: 1rem;
+  letter-spacing: theme(letterSpacing.wider);
+  color: theme(colors.gray.600);
+  padding: 0.5rem 1.25rem 0.5rem 0;
+  border-right: 1px solid theme(colors.gray.300);
+}
+
+[data-theme="dark"] .code-label {
+  color: theme(colors.slate.400);
+  border-right-color: theme(colors.slate.600);
+}
+
+[data-theme="dark"] .big-card {
+  box-shadow:
+    0 5px 20px -3px theme(colors.blue.600 / 40%),
+    0 1px 6px -4px theme(colors.blue.400 / 80%);
+}
+
+[data-theme="light"] .big-card {
+  box-shadow:
+    0 5px 20px -3px theme(colors.gray.600 / 20%),
+    0 1px 6px -4px theme(colors.gray.900 / 50%);
+}
