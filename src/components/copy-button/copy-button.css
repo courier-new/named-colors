@@ -1,0 +1,41 @@
+.copied-tooltip {
+  position: absolute;
+  display: block;
+  top: calc(100% + 0.5rem);
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: theme(colors.gray.700);
+  color: theme(colors.blue.50);
+  transition: opacity 300ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.copied-tooltip[data-copied="true"] {
+  height: auto;
+  padding: 0.375rem 0.5rem;
+  overflow: visible;
+  opacity: 1;
+}
+
+.copied-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -0.95rem;
+  left: calc(50% - 0.5rem);
+  width: 0;
+  height: 0;
+
+  border: 0.5rem solid transparent;
+  border-bottom-color: theme(colors.gray.700);
+}
+
+[data-theme="dark"] .copied-tooltip {
+  background-color: theme(colors.slate.600);
+  color: theme(colors.blue.50);
+}
+
+[data-theme="dark"] .copied-tooltip::before {
+  border-bottom-color: theme(colors.slate.600);
+}
