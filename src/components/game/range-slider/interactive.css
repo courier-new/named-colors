@@ -1,0 +1,11 @@
+.interactive {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  outline: none;
+  /* Don't trigger the default scrolling behavior when the event is originating from this element */
+  touch-action: none;
+}
