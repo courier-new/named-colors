@@ -1,0 +1,56 @@
+.about h2 {
+  font-size: theme(fontSize.lg);
+  font-weight: theme(fontWeight.bold);
+  color: theme(colors.gray.800);
+  margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .about h2 {
+  color: theme(colors.slate.400);
+}
+
+.about h3 {
+  text-transform: uppercase;
+  font-size: theme(fontSize.xs);
+  line-height: 1rem;
+  letter-spacing: theme(letterSpacing.widest);
+  color: theme(colors.gray.500);
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .about h3 {
+  color: theme(colors.slate.400);
+}
+
+.about a {
+  color: theme(colors.blue.700);
+}
+
+.about a:hover {
+  color: theme(colors.blue.800);
+}
+
+[data-theme="dark"] .about a:hover {
+  color: theme(colors.blue.600);
+}
+
+.about code {
+  background: theme(colors.gray.200);
+  font-size: theme(fontSize.sm);
+  line-height: theme(lineHeight.normal);
+  padding: 0.125rem;
+}
+
+[data-theme="dark"] .about code {
+  background: theme(colors.slate.700);
+  color: theme(colors.slate.400);
+}
+
+.about ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.about ul li {
+  margin-bottom: 0.5rem;
+}
