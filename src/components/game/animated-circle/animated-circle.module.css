@@ -1,0 +1,19 @@
+.circle {
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(0deg, red 10%, orange 10%, orange 20%, yellow 20%, yellow 30%, lime 30%, lime 40%, green 40%, green 50%, turquoise 50%, turquoise 60%, blue 60%, blue 70%, indigo 70%, indigo 80%, purple 80%, purple 90%, pink 90%, pink 100%, red 100%);
+  background-size: 2000% 2000%;
+  border-radius: 50%;
+  animation: color-cycle-transition 60s linear infinite;
+  rotate: 135deg;
+  margin: 2.25rem;
+}
+
+@keyframes color-cycle-transition {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: -114% -114%;
+  }
+}
