@@ -83,7 +83,7 @@ export default component$<NewGameScreenProps>(
         <h2 class="text-gray-800 dark:text-slate-300 font-bold text-lg mb-3">
           2. Game mode
         </h2>
-        <div class="flex items-stretch gap-3 sm:gap-5">
+        <div class="flex flex-col xs:flex-row items-stretch gap-3 sm:gap-5">
           <div class="flex flex-col items-center flex-1 py-7 px-5 flex-shrink-0 border-solid bg-white border-gray-200 dark:border-slate-700 dark:bg-slate-900 border-2 rounded-md text-gray-600 dark:text-slate-500">
             <InInputField class="text-gray-300 dark:text-slate-700 text-5xl mb-3" />
             <h3 class="font-bold text-base mb-2">Nametags</h3>

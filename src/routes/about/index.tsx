@@ -204,7 +204,7 @@ export default component$(() => {
       </p>
       <p class="mb-5">
         The names don't <em>need</em> to mean <em>anything</em>. But they might
-        also mean something personal to somebody. They can even be used to
+        also mean something personal to somebody. They can even be used to honor
         somebody in a{" "}
         <a
           href="https://medium.com/@valgaze/the-hidden-purple-memorial-in-your-web-browser-7d84813bb416"
